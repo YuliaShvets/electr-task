@@ -3,8 +3,8 @@ package ua.lviv.iot;
 import java.util.List;
 
 public class Solution {
-    private int distance;
-    private List<Integer> bolt;
+    private final int distance;
+    private final List<Integer> bolt;
 
     public Solution(int distance, List<Integer> bolt) {
         this.distance = distance;
@@ -29,7 +29,7 @@ public class Solution {
                     if (index != bolt.size()) {
                         if (isLastWasChangedToOne) {
                             if (bolt.get(index) > 1) {
-                                length += Math.sqrt(Math.pow((bolt.get(index) - 1), 2) + Math.pow(distance, 2));
+                                length += (float) Math.sqrt(Math.pow((bolt.get(index) - 1), 2) + Math.pow(distance, 2));
                             } else {
                                 length += distance;
                             }
