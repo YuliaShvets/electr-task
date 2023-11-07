@@ -2,11 +2,11 @@ package ua.lviv.iot;
 
 import java.util.List;
 
-public class Solution {
+public class ElectrTask {
     private final int distance;
     private final List<Integer> bolt;
 
-    public Solution(int distance, List<Integer> bolt) {
+    public ElectrTask(int distance, List<Integer> bolt) {
         this.distance = distance;
         this.bolt = bolt;
     }
@@ -51,5 +51,3 @@ public class Solution {
         return length;
     }
 }
-
-

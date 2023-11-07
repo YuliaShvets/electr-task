@@ -1,5 +1,5 @@
 
-import ua.lviv.iot.Solution;
+import ua.lviv.iot.ElectrTask;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Main {
         int distance = 2;
         List<Integer> list = Arrays.asList(3, 3, 3);
 
-        Solution solution = new Solution(distance, list);
-        System.out.println(solution.findTheWorstCase());
+        ElectrTask electrTask = new ElectrTask(distance, list);
+        System.out.println(electrTask.findTheWorstCase());
     }
 }
