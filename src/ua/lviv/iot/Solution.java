@@ -6,9 +6,9 @@ public class Solution {
     private final int distance;
     private final List<Integer> bolt;
 
-    public Solution(int distance, List<Integer> bolt) {
+    public Solution(int distance, List<Integer> bolts) {
         this.distance = distance;
-        this.bolt = bolt;
+        this.bolt = bolts;
     }
 
     public float findTheWorstCase() {
@@ -51,5 +51,3 @@ public class Solution {
         return length;
     }
 }
-
-
